@@ -1,27 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Vlingua</title>
-    <style>
-        body { 
-            background: #000; 
-            color: #fff; 
-            font-family: monospace; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            height: 100vh; 
-            margin: 0; 
-        }
-        h1 { letter-spacing: 5px; margin: 0; }
-        p { color: #666; margin: 10px 0 30px 0; }
-    </style>
+  <link rel="stylesheet" href ="src/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <meta charset = "utf-8"/>
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Главная страница</title>
 </head>
 <body>
-    <h1>VLINGUA<sup>&reg;</sup></h1>
-    <p>Alpha stage.</p>
+  <header>
+    <a href = "index.html"><h1 class = "h1logo">VLINGUA<sup>&reg;</sup></h1></a>
+    <nav>
+	<ul>
+	    <li><a href = "index.html">Домой</a></li>
+	</ul>
+    </nav>
+  </header>
+    <div class="conteiner">
+    <div class="listofcontent">
+      <h3>Учите английский без интернета, рекламы и подписок. Слова с транскрипцией, живые фразы и микро-тексты.</h3>
+      <div class="cta-wrapper">
+          <a href="https://github.com/Vlingua/vlingua/releases/download/1.0.0/vlingua-v1.0.0.apk" class="github-btn" target="_blank" rel="noopener">
+              <svg class="download-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://w3.org">
+                  <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+              </svg>
+               <span>Скачать APK</span>
+          </a>
+      </div>
+      <div class="screenshots-gallery">
+        <img src="src/IMG-1.jpg" alt="Главная" class="app-screen">
+        <img src="src/IMG-2.jpg" alt="Режим слова" class="app-screen">
+        <img src="src/IMG-3.jpg" alt="Режим фразы" class="app-screen">
+        <img src="src/IMG-4.jpg" alt="Режим тексты" class="app-screen">
+      </div>
+      <div class="donate-wrapper">
+        <a href="https://www.sberbank.ru/ru/choise_bank?requisiteNumber=79677491486&bankCode=100000000111" class="donate-btn" target="_blank" rel="noopener">
+          ☕ Поддержать проект
+        </a>
+      </div>
+      <!-- --------------------------------------- -->
+    </div>
+  </div>
+  <div id = "footer">
+    <p>© VLINGUA 2026 г. Все права защищены.</p>
+    <a href ="terms.html">Соглашение</a>
+    <a href ="privacy.html">Конфиденциальность</a>
+  </div>
 </body>
 </html>
-
