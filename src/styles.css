@@ -163,39 +163,38 @@ pre {
     }
 }
 
-.github-btn {
+.rustore-btn {
     display: inline-flex;
     align-items: center;
-    background-color: #1A1A1A; /* Ваша 30% структура */
-    color: #F9F6F0 !important;
-    padding: 14px 28px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 16px;
+    justify-content: center;
+    background-color: #1A1A1A;
+    padding: 4px;
+    border-radius: 12px;
     box-shadow: 0 4px 15px rgba(26, 26, 26, 0.15);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.github-btn:hover {
-    background-color: #E55B44; /* 10% - Коралловый всплеск Вады */
+.rustore-btn:hover {
+    background-color: #E55B44;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(229, 91, 68, 0.3);
 }
 
-.download-icon {
-    width: 22px;
-    height: 22px;
-    margin-right: 12px;
-    fill: currentColor;
+.rustore-badge-img {
+    height: 52px;
+    width: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .cta-wrapper {
     display: flex;
-    justify-content: center; /* Центрирует карточку кнопки по горизонтали */
+    justify-content: center; 
     align-items: center;
-    margin-top: 50px;       /* Увеличенный отступ сверху от текста h3 */
-    margin-bottom: 20px;    /* Отступ снизу до границ контейнера */
-    width: 100%;            /* Растягиваем контейнер во всю ширину для точного центра */
+    margin-top: 50px;       
+    margin-bottom: 20px;    
+    width: 100%;            
 }
 
 .screenshots-gallery {
