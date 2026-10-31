@@ -157,6 +157,8 @@ pre {
     box-shadow: 0 4px 15px rgba(26, 26, 26, 0.15);
     transition: all 0.3s ease;
     text-decoration: none;
+    box-sizing: border-box;
+    flex-shrink: 0; 
 }
 
 .rustore-btn:hover {
@@ -178,24 +180,26 @@ pre {
     align-items: center;
     margin-top: 50px;       
     margin-bottom: 20px;    
-    width: 100%;            
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;    
 }
 
 .desktop-badge-content {
     display: flex;
     align-items: center;
     height: 52px;
-    min-width: 145px;
-    padding: 0 16px 0 12px;
+    min-width: 125px;
+    padding: 0 10px 0 8px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
 }
 
 .badge-svg-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
     flex-shrink: 0;
 }
 
@@ -208,17 +212,17 @@ pre {
 }
 
 .badge-sub-text {
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     opacity: 0.8;
 }
 
 .badge-main-text {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.1px;
     margin-top: 1px;
 }
 
@@ -230,7 +234,7 @@ pre {
     }
     .rustore-btn, .desktop-badge-content {
         width: 100%;
-        max-width: 220px;
+        max-width: 200px;
     }
 }
 
