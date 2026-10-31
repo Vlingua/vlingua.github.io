@@ -1,14 +1,12 @@
-/* --- Сброс стилей и базовые настройки --- */
+
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; /* Защищает разметку от поломок при padding */
+    box-sizing: border-box;
 }
 
 body {
-    /* 60% - Теплый белый бумажный фон Sanzo Wada */
     background-color: #F9F6F0; 
-    /* 30% - Глубокий угольный цвет для всего основного текста */
     color: #1A1A1A; 
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -16,26 +14,22 @@ body {
     min-height: 100vh;
 }
 
-/* --- Ссылки --- */
 a {
     text-decoration: none;
     color: #1A1A1A;
-    transition: color 0.2s ease; /* Плавная смена цвета при наведении */
+    transition: color 0.2s ease;
 }
 
-/* 10% - Акцент при наведении на ссылки: Кораллово-красный */
 a:hover {
     color: #E55B44; 
 }
 
-/* --- Шапка сайта (Header) --- */
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    /* Тонкая серо-черная линия снизу для структуры */
     border-bottom: 1px solid rgba(26, 26, 26, 0.1); 
 }
 
@@ -46,7 +40,6 @@ header {
     letter-spacing: 1px;
 }
 
-/* 10% - Название бренда загорается коралловым при наведении */
 .h1logo:hover {
     color: #E55B44;
 }
@@ -64,28 +57,23 @@ nav a {
     font-size: 16px;
 }
 
-/* --- Главный контейнер (Container) --- */
 .conteiner {
-    flex: 1; /* Прижимает футер к самому низу экрана */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
 }
 
-/* --- Карточки контента --- */
 .listofcontent, .content {
-    /* Чистый белый цвет заменен на мягкую бумажную подложку */
     background: #F9F6F0; 
-    /* Мягкая серо-черная аккуратная рамка для карточки слов */
     border: 1px solid rgba(26, 26, 26, 0.15); 
-    border-radius: 12px; /* Закругленные углы как в Android */
+    border-radius: 12px;
     padding: 30px;
     margin: 15px 0;
-    box-shadow: 0 4px 12px rgba(26, 26, 26, 0.03); /* Едва заметная дорогая тень */
+    box-shadow: 0 4px 12px rgba(26, 26, 26, 0.03);
 }
 
-/* Стилизация главного оффера внутри карточки */
 .listofcontent h3 {
     font-weight: 400;
     line-height: 1.6;
@@ -95,14 +83,12 @@ nav a {
     text-align: center;
 }
 
-/* --- Футер сайта (Нижняя панель) --- */
 #footer {
     padding: 20px;
     text-align: center;
     font-size: 14px;
-    /* Тонкая серо-черная линия сверху для отделения футера */
     border-top: 1px solid rgba(26, 26, 26, 0.1); 
-    color: rgba(26, 26, 26, 0.7); /* Чуть приглушенный угольный текст */
+    color: rgba(26, 26, 26, 0.7);
 }
 
 #footer p {
@@ -116,14 +102,13 @@ nav a {
 }
 
 #footer a:hover {
-    color: #E55B44; /* Коралловый при наведении в футере */
+    color: #E55B44;
 }
 
-/* --- Код и превью (если будут на сайте) --- */
 pre {
     background: rgba(26, 26, 26, 0.03);
     border: 1px solid rgba(26, 26, 26, 0.1);
-    border-left: 4px solid #E55B44; /* 10% - Коралловый акцент на линию слева */
+    border-left: 4px solid #E55B44;
     color: #1A1A1A;
     font-family: monospace;
     font-size: 15px;
@@ -137,10 +122,9 @@ pre {
     border-radius: 0 8px 8px 0;
 }
 
-/* --- Адаптивность для больших экранов (Компьютеры и ноутбуки) --- */
 @media (min-width: 950px) {
     header {
-        padding: 20px 200px; /* Выравнивание шапки по сетке контента */
+        padding: 20px 200px;
     }
 
     .conteiner {
@@ -150,12 +134,12 @@ pre {
     .listofcontent, .content {
         max-width: 800px;
         width: 100%;
-        margin: 20px auto; /* Центрирование карточки строго по центру экрана */
+        margin: 20px auto;
         padding: 50px;
     }
 
     .listofcontent h3 {
-        font-size: 22px; /* Более крупный и читаемый шрифт на ПК */
+        font-size: 22px;
     }
 
     .picture {
@@ -197,25 +181,74 @@ pre {
     width: 100%;            
 }
 
+.desktop-badge-content {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    min-width: 145px;
+    padding: 0 16px 0 12px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+.badge-svg-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.badge-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.badge-sub-text {
+    font-size: 9px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+.badge-main-text {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    margin-top: 1px;
+}
+
+@media (max-width: 650px) {
+    .cta-wrapper {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 24px;
+    }
+    .rustore-btn, .desktop-badge-content {
+        width: 100%;
+        max-width: 220px;
+    }
+}
+
 .screenshots-gallery {
     display: flex;
     flex-direction: row;
     
-    /* ИСПРАВЛЕНИЕ: Это свойство сдвинет все 4 скриншота ровно в центр */
     justify-content: center; 
     
-    /* Зазор между скриншотами */
     gap: 15px; 
     margin-top: 35px;
     
-    /* Разрешаем перенос картинок на новую строку, если они не влезают на мобильных */
     flex-wrap: wrap; 
     padding-bottom: 10px;
     width: 100%;
 }
 
 .app-screen {
-    /* Поскольку картинок теперь 4, пропорционально уменьшаем базовую ширину */
     width: 22%; 
     min-width: 80px;
     max-width: 130px; 
@@ -225,29 +258,26 @@ pre {
     box-shadow: 0 4px 10px rgba(26, 26, 26, 0.05);
 }
 
-/* --- Блок поддержки автора (Донат) --- */
 .donate-wrapper {
     text-align: center;
-    margin-top: 40px; /* Свободный отступ от скриншотов сверху */
+    margin-top: 40px;
     padding: 15px;
-    border-top: 1px dashed rgba(26, 26, 26, 0.15); /* Аккуратная пунктирная линия сверху */
+    border-top: 1px dashed rgba(26, 26, 26, 0.15);
 }
 
 .donate-text {
     font-size: 14px;
     line-height: 1.5;
-    /* Угольный текст, но слегка приглушенный для мягкости */
     color: rgba(26, 26, 26, 0.7); 
     max-width: 500px;
-    margin: 0 auto 15px auto; /* Центрируем текст по центру */
+    margin: 0 auto 15px auto;
 }
 
 .donate-btn {
     display: inline-flex;
     align-items: center;
-    /* 10% Акцент Вады - кораллово-красный цвет */
     background-color: #E55B44; 
-    color: #F9F6F0 !important; /* Цвет теплой бумаги для текста */
+    color: #F9F6F0 !important;
     padding: 12px 24px;
     border-radius: 10px;
     font-weight: 600;
@@ -256,12 +286,27 @@ pre {
     transition: all 0.2s ease;
 }
 
-/* Эффект при наведении */
 .donate-btn:hover {
-    /* Меняется на глубокий угольный */
     background-color: #1A1A1A; 
     box-shadow: 0 6px 15px rgba(26, 26, 26, 0.2);
     transform: translateY(-1px);
+}
+
+
+.android-icon-color {
+    color: #3DDC84;
+    transition: color 0.3s ease;
+}
+
+
+.rustore-btn:hover .android-icon-color {
+    color: #FFFFFF;
+}
+
+
+.cta-wrapper {
+    gap: 16px;
+    padding: 0 12px;
 }
 
 @media (min-width: 950px) {
